@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as *;
+
+header {
+  padding: 1rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $navBgColor;
+  box-shadow: 5px 5px 10px rgb(29, 2, 93);
+
+  img {
+    width: 110px;
+    height: 70px;
+    // outline: 2px solid darkred;
+    // outline-offset: 5px;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 5px 5px 10px rgb(255, 255, 255);
+  }
+  ul {
+    list-style-type: none;
+    li {
+      display: inline-block;
+      padding: 0.5rem;
+
+      &:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.2);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  a {
+    color: $fontColor;
+    text-decoration: none;
+    padding: 5px;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+}
+
+//*********** BANNER *******************/

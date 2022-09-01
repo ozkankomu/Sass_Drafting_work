@@ -1,0 +1,12 @@
+@import "variables";
+
+@mixin myBox($backColor, $color) {
+  background-color: $backColor;
+  color: $color;
+  width: 25%;
+  border: $myBorder;
+  height: 15rem;
+  border-radius: 10px;
+  padding-top: 1rem;
+  box-shadow: 5px 5px 10px rgb(68, 3, 3);
+}

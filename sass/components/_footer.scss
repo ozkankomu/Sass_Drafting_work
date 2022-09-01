@@ -1,0 +1,27 @@
+footer {
+  $dark: 2;
+
+  p {
+    color: black;
+    @if $dark==1 {
+      background-color: gray;
+    } @else if$dark==2 {
+      background-color: rgb(75, 74, 74);
+    }
+  }
+  .social-icons {
+    display: flex;
+    height: 10rem;
+    text-shadow: 1px 1px 3px white;
+    border: 3px solid darkgray;
+    $textColor: #000000, #55004e, #096a63, #121456, #64c217;
+    @for $i from 1 through 5 {
+      .social#{$i} {
+        width: 20%;
+        background-color: darken(rgba(255, 7, 7, 0.89), $i * 5);
+        font-size: $i * 1rem;
+        color: nth($textColor, $i);
+      }
+    }
+  }
+}

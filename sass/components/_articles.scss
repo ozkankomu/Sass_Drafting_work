@@ -1,0 +1,29 @@
+.articles {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  text-align: center;
+  color: rgb(105, 6, 6);
+  font-weight: bold;
+  text-shadow: 1px 1px 3px white;
+
+  .article1 {
+    background-color: rgb(68, 68, 68);
+    width: 50%;
+    border: 1px solid pink;
+    border-radius: 10px;
+    height: 10rem;
+    box-shadow: 5px 5px 8px darkred;
+  }
+  .article1:hover {
+    transition: all 0.3s ease;
+    outline: 5px solid white;
+    transform: scale(1.02);
+    outline-offset: 2px;
+    border-radius: 10px 0px 10px 0px;
+  }
+  .article2 {
+    @extend .article1;
+    background-color: darkslateblue;
+  }
+}

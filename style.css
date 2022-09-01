@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.articles {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  text-align: center;
+  color: rgb(105, 6, 6);
+  font-weight: bold;
+  text-shadow: 1px 1px 3px white;
+}
+.articles .article1, .articles .article2 {
+  background-color: rgb(68, 68, 68);
+  width: 50%;
+  border: 1px solid pink;
+  border-radius: 10px;
+  height: 10rem;
+  box-shadow: 5px 5px 8px darkred;
+}
+.articles .article1:hover, .articles .article2:hover {
+  transition: all 0.3s ease;
+  outline: 5px solid white;
+  transform: scale(1.02);
+  outline-offset: 2px;
+  border-radius: 10px 0px 10px 0px;
+}
+.articles .article2 {
+  background-color: darkslateblue;
+}
+
+.banner {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hotpink;
+  line-height: 2rem;
+  box-shadow: 5px 5px 10px darkred;
+}
+.banner aside h2 {
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 10px rgb(255, 255, 255);
+}
+.banner aside p {
+  font-weight: bold;
+}
+.banner aside button {
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #30a7c3;
+  margin-top: 1rem;
+  box-shadow: 3px 3px 5px rgb(69, 3, 3);
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.banner aside button:hover {
+  background-color: pink;
+  outline: 2px solid white;
+  outline-offset: 2px;
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+  box-shadow: 3px 3px 5px rgb(6, 219, 239);
+}
+.banner img {
+  width: 30%;
+  min-width: 250px;
+  max-width: 400px;
+  margin-left: 10px;
+}
+
+.cards {
+  display: flex;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 0.8rem;
+}
+.cards .card1:hover {
+  transform: scale(1.05);
+  outline: 4px solid rgb(255, 255, 255);
+  outline-offset: 1px;
+  transition: all 0.3s ease;
+}
+.cards .card2:hover {
+  transform: scale(1.05);
+  outline: 4px solid rgb(255, 255, 255);
+  outline-offset: 1px;
+  transition: all 0.3s ease;
+}
+.cards .card3:hover {
+  transform: scale(1.05);
+  outline: 4px solid rgb(255, 255, 255);
+  outline-offset: 1px;
+  transition: all 0.3s ease;
+}
+.cards .card4:hover {
+  transform: scale(1.05);
+  outline: 4px solid rgb(255, 255, 255);
+  outline-offset: 1px;
+  transition: all 0.3s ease;
+}
+.cards .card1 {
+  background-color: green;
+  color: rgb(91, 2, 2);
+  width: 25%;
+  border: 2px solid brown;
+  height: 15rem;
+  border-radius: 10px;
+  padding-top: 1rem;
+  box-shadow: 5px 5px 10px rgb(68, 3, 3);
+}
+.cards .card2 {
+  background-color: rgb(128, 0, 0);
+  color: rgb(91, 2, 2);
+  width: 25%;
+  border: 2px solid brown;
+  height: 15rem;
+  border-radius: 10px;
+  padding-top: 1rem;
+  box-shadow: 5px 5px 10px rgb(68, 3, 3);
+}
+.cards .card3 {
+  background-color: rgb(156, 213, 0);
+  color: rgb(91, 2, 2);
+  width: 25%;
+  border: 2px solid brown;
+  height: 15rem;
+  border-radius: 10px;
+  padding-top: 1rem;
+  box-shadow: 5px 5px 10px rgb(68, 3, 3);
+}
+.cards .card4 {
+  background-color: darkblue;
+  color: rgb(91, 2, 2);
+  width: 25%;
+  border: 2px solid brown;
+  height: 15rem;
+  border-radius: 10px;
+  padding-top: 1rem;
+  box-shadow: 5px 5px 10px rgb(68, 3, 3);
+}
+
+footer p {
+  color: black;
+  background-color: rgb(75, 74, 74);
+}
+footer .social-icons {
+  display: flex;
+  height: 10rem;
+  text-shadow: 1px 1px 3px white;
+  border: 3px solid darkgray;
+}
+footer .social-icons .social1 {
+  width: 20%;
+  background-color: rgba(237, 0, 0, 0.89);
+  font-size: 1rem;
+  color: #000000;
+}
+footer .social-icons .social2 {
+  width: 20%;
+  background-color: rgba(211, 0, 0, 0.89);
+  font-size: 2rem;
+  color: #55004e;
+}
+footer .social-icons .social3 {
+  width: 20%;
+  background-color: rgba(186, 0, 0, 0.89);
+  font-size: 3rem;
+  color: #096a63;
+}
+footer .social-icons .social4 {
+  width: 20%;
+  background-color: rgba(160, 0, 0, 0.89);
+  font-size: 4rem;
+  color: #121456;
+}
+footer .social-icons .social5 {
+  width: 20%;
+  background-color: rgba(135, 0, 0, 0.89);
+  font-size: 5rem;
+  color: #64c217;
+}
+
+header {
+  padding: 1rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #30a7c3;
+  box-shadow: 5px 5px 10px rgb(29, 2, 93);
+}
+header img {
+  width: 110px;
+  height: 70px;
+  border-radius: 20px 0px 20px 0px;
+  box-shadow: 5px 5px 10px rgb(255, 255, 255);
+}
+header ul {
+  list-style-type: none;
+}
+header ul li {
+  display: inline-block;
+  padding: 0.5rem;
+}
+header ul li:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.2);
+  text-decoration: underline;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  text-shadow: 2px 2px 3px black;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: pink;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

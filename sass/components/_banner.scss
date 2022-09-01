@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as *;
+
+.banner {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bannerBgColor;
+  line-height: 2rem;
+  box-shadow: 5px 5px 10px darkred;
+
+  aside {
+    h2 {
+      margin-bottom: 10px;
+      text-shadow: 3px 3px 10px rgb(255, 255, 255);
+    }
+    p {
+      font-weight: bold;
+    }
+    button {
+      padding: 0.5rem;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 5px;
+      background-color: $navBgColor;
+      margin-top: 1rem;
+      box-shadow: 3px 3px 5px rgb(69, 3, 3);
+      margin-right: 0.5rem;
+      cursor: pointer;
+      &:hover {
+        background-color: pink;
+        outline: 2px solid white;
+        outline-offset: 2px;
+        transform: scale(1.1);
+        transition: all 0.4s ease;
+        box-shadow: 3px 3px 5px rgb(6, 219, 239);
+      }
+    }
+  }
+  img {
+    width: 30%;
+    min-width: 250px;
+    max-width: 400px;
+    margin-left: 10px;
+  }
+}
